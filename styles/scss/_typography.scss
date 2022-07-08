@@ -1,0 +1,50 @@
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	align-self: center;
+	text-decoration: none;
+	padding: 1rem 3rem;
+	font-size: 2.4rem;
+	border-radius: 10rem;
+	color: white;
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	&-red {
+		background-color: red;
+
+		&:hover {
+			background-color: #0085ff;
+			color: white;
+		}
+	}
+
+	&-orange {
+		background-color: #ffb100;
+
+		&:hover {
+			background-color: red;
+			color: white;
+		}
+	}
+
+	&-blue {
+		background-color: #0085ff;
+
+		&:hover {
+			background-color: #ffb100;
+		}
+	}
+}
+
+.h2 {
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 3px;
+	width: fit-content;
+	text-align: center;
+}

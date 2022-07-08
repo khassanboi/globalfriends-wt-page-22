@@ -1,0 +1,98 @@
+.header {
+	width: 100%;
+	display: flex;
+
+	&__left {
+		width: 50%;
+	}
+
+	&__right {
+		width: 50%;
+		.carousel-item {
+			height: 90vh;
+			position: relative;
+
+			.carousel-caption {
+				padding: 10rem 0;
+				top: 0;
+				bottom: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+
+				.h1 {
+					font-size: 10rem;
+					color: orange;
+					text-transform: uppercase;
+					font-weight: 900;
+					letter-spacing: 5px;
+					margin-bottom: 5rem;
+					text-align: center;
+				}
+
+				.h2 {
+					font-size: 4rem;
+					text-transform: uppercase;
+					font-weight: 900;
+					letter-spacing: 3px;
+					position: relative;
+					width: fit-content;
+
+					&::before {
+						content: '';
+						width: 4rem;
+						height: 4rem;
+						background-image: url(../../images/header-spark-left.png);
+						background-size: contain;
+						background-position: center;
+						background-repeat: no-repeat;
+						position: absolute;
+						left: -7rem;
+						top: 0;
+					}
+
+					&::after {
+						content: '';
+						width: 4rem;
+						height: 4rem;
+						background-image: url(../../images/header-spark-right.png);
+						background-size: contain;
+						background-position: center;
+						background-repeat: no-repeat;
+						position: absolute;
+						right: -7rem;
+						top: 0;
+					}
+				}
+
+				@media only screen and (max-width: 500px) {
+					padding: 3rem;
+					.h1 {
+						font-size: 7rem;
+					}
+
+					.h2 {
+						font-size: 5rem;
+					}
+				}
+			}
+
+			.overlay-image {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-position: center;
+				background-size: cover;
+			}
+
+			&:nth-child(2) {
+				.overlay-image {
+					background-position: bottom;
+				}
+			}
+		}
+	}
+}
