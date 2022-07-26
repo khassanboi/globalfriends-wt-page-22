@@ -97,6 +97,12 @@
 			.right {
 				width: 100%;
 				margin-bottom: 3rem;
+				display: flex;
+				justify-content: center;
+
+				.last-img {
+					display: none;
+				}
 			}
 		}
 	}
@@ -139,13 +145,17 @@
 	}
 
 	@media only screen and (max-width: 500px) {
-		padding: 5rem 3rem;
+		padding: 5rem 2rem;
 		flex-direction: column;
 
 		img {
 			margin-bottom: 5rem;
 			width: 60%;
 			transform: translateX(1rem);
+		}
+
+		.p {
+			text-align: center;
 		}
 	}
 }
@@ -221,7 +231,7 @@
 		}
 
 		&__right {
-			height: 80rem;
+			height: 35rem;
 				
 		}
 
@@ -296,6 +306,8 @@
 		font-size: 1.4rem;
 		color: white;
 		text-align: center;
+		padding: 2rem 4rem;
+
 	}
 
 	.owl-carousel {
@@ -375,7 +387,7 @@
 					font-size: 3rem;
 				}
 
-				height: 100rem;
+				height: 80rem;
 				width: 100%;
 
 				&__content {
@@ -507,7 +519,10 @@
 		list-style: none;
 
 		li {
+			width: fit-content;
 			padding: 1rem 0;
+			background-color: #fff;
+			border-radius: 1rem;
 
 			a {
 				color: black;
@@ -529,5 +544,13 @@
 				}
 			}
 		}
+	}
+
+	@media only screen and (max-width: 800px) {
+		padding: 7rem 5rem;
+	}
+	
+	@media only screen and (max-width: 500px) {
+		padding: 6rem 3rem;
 	}
 }
