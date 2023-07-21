@@ -592,7 +592,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../../images/our-credibility.png);
+  background-image: url(../../images/our-credibility.jpg);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -990,7 +990,7 @@ body {
   }
 }
 .contacts {
-  background-image: url(../../images/contacts-bg.png);
+  background-image: url(../../images/contacts-bg.jpg);
   background-size: cover;
   padding: 10rem;
   padding-bottom: 20rem;
