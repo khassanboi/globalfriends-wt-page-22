@@ -922,12 +922,25 @@ body {
   margin-top: 1rem;
   color: white;
 }
-.consultation__persons .name span {
-  color: #ff9102;
-  text-transform: capitalize;
+
+.consultation__persons .name .position {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  color: white;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
 }
+
+.consultation__persons .name .email {
+  font-weight: 300;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #ffb101;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
 .consultation__text {
   padding: 1rem;
   width: 60%;
