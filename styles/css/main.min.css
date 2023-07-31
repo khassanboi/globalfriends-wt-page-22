@@ -861,6 +861,82 @@ body {
     font-size: 2rem;
   }
 }
+
+.album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5rem;
+  background-image: url(../../images/album-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.album .h2 {
+  color: white;
+  background-color: #0084ff;
+  padding: 0.5rem 2rem;
+}
+.album .container-album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.album .container-album img {
+  width: 90%;
+  margin: 3rem 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .about .h2 {
+    font-size: 3rem;
+  }
+  .about .label {
+    font-size: 1.5rem;
+  }
+  .about .container-about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .about .container-about .left {
+    width: 100%;
+    margin: 0;
+  }
+  .about .container-about .right {
+    width: 100%;
+    margin-bottom: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .about .container-about .right .last-img {
+    display: none;
+  }
+}
+
 .consultation {
   padding: 5rem 1rem;
   display: -webkit-box;
@@ -1020,7 +1096,6 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 0;
-  background-color: #fff;
   border-radius: 1rem;
 }
 .contacts ul li a {
