@@ -691,6 +691,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
 .partners .h2 {
   color: #0085ff;
 }
@@ -700,6 +701,7 @@ body {
 }
 .partners__left,
 .partners__right {
+  width: 50%;
   padding: 5rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -716,9 +718,14 @@ body {
   padding: 3rem;
   border-left: 1px solid #366b9c;
 }
+
 .partners img {
   width: 100%;
   margin: 5rem 0;
+}
+
+.partners__right img {
+  margin-top: 10rem;
 }
 @media only screen and (max-width: 800px) {
   .partners {
@@ -728,11 +735,18 @@ body {
     flex-direction: column-reverse;
   }
   .partners__right {
+    width: 100%;
     padding-bottom: 1rem;
   }
+
   .partners__left {
+    width: 100%;
     padding-top: 2rem;
     border-top: 1px solid #366b9c;
+  }
+
+  .partners img {
+    margin: 5rem 0;
   }
 }
 .alumni {
