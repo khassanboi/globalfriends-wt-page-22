@@ -468,6 +468,13 @@ body {
   margin-right: 5rem;
   padding: 5rem 0;
 }
+
+.about .container-about .left .buttons {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .about .container-about .left .p {
   font-size: 1.8rem;
   color: white;
