@@ -56,6 +56,24 @@
         font-weight: 700;
         margin-bottom: 5rem;
       }
+
+      .buttons {
+        width: 100%;
+        padding: 0 5rem;
+        display: flex;
+        justify-content: space-around;
+
+        @media only screen and (max-width: 800px) {
+          flex-direction: column;
+          align-items: space-around;
+          justify-content: space-between;
+          padding: 0;
+
+          .btn {
+            margin: 1rem 0;
+          }
+        }
+      }
     }
 
     .right {
@@ -162,7 +180,7 @@
 
 .our-credibility {
   display: flex;
-  background-image: url(../../images/our-credibility.png);
+  background-image: url(../../images/our-credibility.jpg);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -259,6 +277,7 @@
 
   &__left,
   &__right {
+    width: 50%;
     padding: 5rem 4rem;
     display: flex;
     flex-direction: column;
@@ -266,7 +285,6 @@
   }
 
   &__right {
-    padding: 3rem;
     border-left: 1px solid #366b9c;
   }
 
@@ -286,6 +304,45 @@
       padding-top: 2rem;
       border-top: 1px solid #366b9c;
     }
+  }
+}
+
+.album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem;
+  background-image: url(../../images/album-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .h2 {
+    color: white;
+    background-color: #0084ff;
+    padding: 0.5rem 2rem;
+  }
+
+  .container-album {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .container-album img {
+    width: 90%;
+    margin: 3rem 0;
   }
 }
 
@@ -434,6 +491,7 @@
 
     img {
       width: 70%;
+      border-radius: 5rem;
     }
 
     .name {
@@ -441,14 +499,23 @@
       font-size: 2.5rem;
       text-transform: uppercase;
       font-weight: 700;
-      margin-top: 1rem;
+      margin: 2rem 0;
       color: white;
 
-      span {
-        color: #ff9102;
+      .position {
+        padding-top: 2rem;
         text-transform: capitalize;
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 1.8rem;
+      }
+
+      .email {
+        text-transform: lowercase;
+        background-color: #ffb100;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
       }
     }
   }
@@ -504,7 +571,7 @@
 }
 
 .contacts {
-  background-image: url(../../images/contacts-bg.png);
+  background-image: url(../../images/contacts-bg.jpg);
   background-size: cover;
   padding: 10rem;
   padding-bottom: 20rem;
