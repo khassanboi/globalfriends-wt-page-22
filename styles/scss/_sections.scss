@@ -1,4 +1,4 @@
-.about {
+.about-program {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -9,11 +9,11 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  .h2 {
+  &__title {
     color: white;
   }
 
-  .label {
+  &__subtitle {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 900;
@@ -25,20 +25,13 @@
     text-align: center;
   }
 
-  ul {
-    li {
-      text-align: left;
-      color: black;
-    }
-  }
-
-  .container-about {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
 
-    .left {
+    &--left {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -47,134 +40,250 @@
       background-color: white;
       margin-right: 5rem;
       padding: 5rem 0;
-
-      .p {
-        font-size: 1.8rem;
-        color: white;
-        text-align: center;
-        padding: 0 3rem;
-        font-weight: 700;
-        margin-bottom: 5rem;
-      }
-
-      .buttons {
-        width: 100%;
-        padding: 0 5rem;
-        display: flex;
-        justify-content: space-around;
-
-        @media only screen and (max-width: 800px) {
-          flex-direction: column;
-          align-items: space-around;
-          justify-content: space-between;
-          padding: 0;
-
-          .btn {
-            margin: 1rem 0;
-          }
-        }
-      }
     }
 
-    .right {
+    &--right {
       width: 40%;
       display: flex;
       align-items: center;
+    }
+  }
 
-      .first-img {
-        width: 25rem;
-        height: auto;
-        border: 5px solid white;
-      }
+  &__requirements-item {
+    text-align: left;
+    color: black;
+  }
 
-      .last-img {
-        width: 30rem;
-        margin-left: 5rem;
-        border: 5px solid white;
+  &__requirements {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    padding: 0 3rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+  }
+
+  &__buttons {
+    width: 100%;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-around;
+
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: space-around;
+      justify-content: space-between;
+      padding: 0;
+
+      .btn {
+        margin: 1rem 0;
       }
     }
   }
 
+  &__first-img {
+    width: 25rem;
+    height: auto;
+    border: 5px solid white;
+  }
+
+  &__last-img {
+    width: 30rem;
+    margin-left: 5rem;
+    border: 5px solid white;
+  }
+
   @media only screen and (max-width: 800px) {
-    .h2 {
+    &__title {
       font-size: 3rem;
     }
 
-    .label {
+    &__subtitle {
       font-size: 1.5rem;
     }
 
-    .container-about {
+    &__container {
       flex-direction: column-reverse;
 
-      .left {
+      &--left {
         width: 100%;
         margin: 0;
       }
 
-      .right {
+      &--right {
         width: 100%;
         margin-bottom: 3rem;
         display: flex;
         justify-content: center;
-
-        .last-img {
-          display: none;
-        }
       }
+    }
+
+    &__last-img {
+      display: none;
     }
   }
 }
 
-.about-us {
+.about-company {
   display: flex;
-  // background-image: url(../../images/faq-bg.png);
   background-color: #ebf1f7;
   background-size: cover;
   padding: 3rem;
   align-items: center;
 
-  img {
+  &__img {
     width: 40%;
     margin: 3rem;
     border-radius: 1rem;
     box-shadow: -1rem 1rem 0 #ffb100;
   }
 
-  .content {
+  &__content {
     margin-left: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
 
-    .h2 {
-      color: #0085ff;
-      margin-bottom: 5rem;
-    }
+  &__title {
+    color: #0085ff;
+    margin-bottom: 5rem;
+  }
 
-    .p {
-      font-size: 2rem;
-    }
+  &__text {
+    font-size: 2rem;
+  }
 
-    .btn {
-      margin-top: 5rem;
-    }
+  &__btn {
+    margin-top: 5rem;
   }
 
   @media only screen and (max-width: 500px) {
     padding: 5rem 2rem;
     flex-direction: column;
 
-    img {
+    &__img {
       margin-bottom: 5rem;
       width: 60%;
       transform: translateX(1rem);
     }
 
-    .p {
+    &__text {
       text-align: center;
     }
+  }
+}
+
+.alumni {
+  background-image: url(../../images/alumni-bg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+
+  &__title {
+    color: white;
+    background-color: #ffb100;
+    padding: 0 2rem;
+    margin: 2rem 0;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    padding: 2rem 4rem;
+  }
+
+  &__item {
+    text-decoration: none;
+  }
+
+  &__item-container {
+    padding: 3rem;
+    display: flex;
+    height: 60rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 600px) {
+      &__name {
+        font-size: 3rem;
+      }
+
+      &__content {
+        .h3 {
+          font-size: 4rem;
+        }
+
+        .p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  &__photo {
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+  }
+
+  &__photo-eye {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    border-radius: 50%;
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    background-image: url(../../images/eye.png);
+    background-size: cover;
+  }
+
+  &__photo:hover {
+    .alumni__photo-eye {
+      background-image: url(../../images/eye-open.png);
+      box-shadow: 2px 2px 10px rgba($color: #000000, $alpha: 0.4);
+    }
+  }
+
+  &__content {
+    background-color: #ffb100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem;
+    width: 100%;
+  }
+
+  &__name,
+  &__program {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__program {
+    background-color: #0085ff;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+  }
+
+  &__description {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.3rem;
   }
 }
 
@@ -196,50 +305,41 @@
       rgb(255, 177, 1) 75%,
       rgb(255, 177, 0.9) 100%
     );
+  }
 
-    .h2,
-    .text {
-      color: white;
-      font-weight: 700;
-    }
+  &__title {
+    color: white;
+    font-weight: 700;
+  }
 
-    .h3 {
-      color: #0085ff;
-      font-size: 1.8rem;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
+  &__text {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
 
-    ul {
-      list-style: none;
-      margin-top: 2rem;
+  &__list {
+    list-style: none;
+    margin-top: 2rem;
+  }
 
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2rem 0;
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
 
-        img {
-          width: 8rem;
-          margin-right: 3rem;
-        }
+  &__subtitle {
+    color: #0085ff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 
-        h3 {
-          color: #0085ff;
-          text-transform: uppercase;
-          font-size: 1.6rem;
-        }
-
-        p {
-          font-size: 1.5rem;
-        }
-
-        p:last-child {
-          margin: 1rem 0;
-        }
-      }
-    }
+  &__list-item-icon {
+    width: 8rem;
+    margin-right: 3rem;
   }
 
   @media only screen and (max-width: 800px) {
@@ -256,7 +356,7 @@
       display: none;
     }
 
-    img {
+    &__list-item-icon {
       width: 8rem;
       height: 8rem;
       margin-right: 2rem;
@@ -264,16 +364,8 @@
   }
 }
 
-.partners {
+.sponsors {
   display: flex;
-  .h2 {
-    color: #0085ff;
-
-    &.big {
-      font-size: 6rem;
-      color: #ffb100;
-    }
-  }
 
   &__left,
   &__right {
@@ -288,7 +380,11 @@
     border-left: 1px solid #366b9c;
   }
 
-  img {
+  &__title {
+    color: #0085ff;
+  }
+
+  &__img {
     width: 100%;
     margin: 5rem 0;
   }
@@ -320,13 +416,13 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  .h2 {
+  &__title {
     color: white;
     background-color: #0084ff;
     padding: 0.5rem 2rem;
   }
 
-  .container-album {
+  &__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -340,128 +436,13 @@
     padding: 2rem 0;
   }
 
-  .container-album img {
+  &__img {
     width: 90%;
     margin: 3rem 0;
   }
 }
 
-.alumni {
-  background-image: url(../../images/alumni-bg.jpg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem 0;
-
-  .h2 {
-    color: white;
-    background-color: #ffb100;
-    padding: 0 2rem;
-    margin: 2rem 0;
-  }
-
-  .p {
-    font-size: 1.4rem;
-    color: white;
-    text-align: center;
-    padding: 2rem 4rem;
-  }
-
-  .owl-carousel {
-    a {
-      text-decoration: none;
-    }
-    .story {
-      padding: 3rem;
-      display: flex;
-      height: 60rem;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-
-      &__photo {
-        height: 80%;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        position: relative;
-
-        .eye {
-          position: absolute;
-          top: 2rem;
-          left: 2rem;
-          border-radius: 50%;
-          content: "";
-          width: 5rem;
-          height: 5rem;
-          background-image: url(../../images/eye.png);
-          background-size: cover;
-        }
-
-        &:hover {
-          .eye {
-            background-image: url(../../images/eye-open.png);
-            box-shadow: 2px 2px 10px rgba($color: #000000, $alpha: 0.4);
-          }
-        }
-      }
-
-      &__content {
-        background-color: #ffb100;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem 3rem;
-        width: 100%;
-
-        .h3 {
-          font-size: 2.5rem;
-          color: white;
-          font-weight: 700;
-          text-align: center;
-
-          &.bg {
-            background-color: #0085ff;
-            width: fit-content;
-            padding: 0.5rem 1rem;
-            margin: 1rem 0;
-          }
-        }
-
-        .p {
-          color: white;
-          font-weight: 700;
-          text-align: center;
-          font-size: 1.3rem;
-        }
-      }
-
-      @media only screen and (max-width: 600px) {
-        .h3 {
-          font-size: 3rem;
-        }
-
-        height: 80rem;
-        width: 100%;
-
-        &__content {
-          .h3 {
-            font-size: 4rem;
-          }
-
-          .p {
-            font-size: 2rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-.consultation {
+.team {
   padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -471,7 +452,7 @@
   background-size: cover;
   background-position: center;
 
-  .h2 {
+  &__title {
     color: white;
   }
 
@@ -488,51 +469,51 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
 
-    img {
-      width: 70%;
-      border-radius: 5rem;
+  &__person-img {
+    width: 70%;
+    border-radius: 5rem;
+  }
+
+  &__person-info {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 2rem 0;
+    color: white;
+
+    &--position {
+      padding-top: 2rem;
+      text-transform: capitalize;
+      font-weight: 500;
+      font-size: 1.8rem;
     }
 
-    .name {
-      text-align: center;
-      font-size: 2.5rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      margin: 2rem 0;
-      color: white;
-
-      .position {
-        padding-top: 2rem;
-        text-transform: capitalize;
-        font-weight: 500;
-        font-size: 1.8rem;
-      }
-
-      .email {
-        text-transform: lowercase;
-        background-color: #ffb100;
-        font-weight: 500;
-        padding: 0.5rem 1rem;
-        border-radius: 1rem;
-        font-size: 1.5rem;
-      }
+    &--email {
+      text-transform: lowercase;
+      background-color: #ffb100;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      font-size: 1.5rem;
     }
   }
 
-  &__text {
+  &__consultation {
     padding: 1rem;
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.8rem;
+  }
 
-    .text {
-      text-align: center;
-      color: white;
-      margin: 3rem 0;
-    }
+  &__consultation-text {
+    text-align: center;
+    color: white;
+    margin: 3rem 0;
   }
 
   @media only screen and (max-width: 800px) {
@@ -553,63 +534,60 @@
     &__person {
       width: 100%;
       flex: 0 0 auto;
-
-      img {
-        width: 70%;
-      }
-
-      h4 {
-        width: 100%;
-      }
     }
 
-    &__text {
+    &__person-img {
+      width: 70%;
+    }
+
+    &__person-info {
+      width: 100%;
+    }
+
+    &__consultation {
       padding: 0 1rem;
       width: 90%;
     }
   }
 }
 
-.contacts {
+.social-media {
   background-image: url(../../images/contacts-bg.jpg);
   background-size: cover;
   padding: 10rem;
   padding-bottom: 20rem;
 
-  .h2 {
+  &__title {
     color: #0085ff;
     margin-bottom: 5rem;
   }
 
-  ul {
+  &__list {
     list-style: none;
+  }
 
-    li {
-      width: fit-content;
-      padding: 1rem 0;
-      background-color: #fff;
-      border-radius: 1rem;
+  &__list-item {
+    width: fit-content;
+    padding: 1rem 0;
+    border-radius: 1rem;
+  }
 
-      a {
-        color: black;
-        font-weight: 700;
-        font-size: 2.5rem;
-        text-decoration: none;
+  &__link {
+    color: black;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-decoration: none;
+  }
 
-        img {
-          width: 3rem;
-          margin-right: 1rem;
-          transition: all 0.2s;
-        }
+  &__icon {
+    width: 3rem;
+    margin-right: 1rem;
+    transition: all 0.2s;
+  }
 
-        &:hover {
-          img {
-            margin-right: 2rem;
-            transform: scale(1.2);
-          }
-        }
-      }
-    }
+  &__list-item:hover &__icon {
+    margin-right: 2rem;
+    transform: scale(1.2);
   }
 
   @media only screen and (max-width: 800px) {
