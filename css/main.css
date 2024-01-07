@@ -197,7 +197,7 @@ body {
   justify-content: space-around;
 }
 .header__title {
-  font-size: 10rem;
+  font-size: 12rem;
   color: white;
   font-weight: 900;
   line-height: 1;
@@ -216,7 +216,7 @@ body {
   z-index: 100;
 }
 .header__title--yllw {
-  font-size: 10rem;
+  font-size: 9rem;
   color: orange;
   font-weight: 900;
   line-height: 1;
@@ -230,7 +230,7 @@ body {
   text-align: center;
   justify-content: center;
   color: white;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 .header__btn {
   z-index: 9997;
@@ -263,7 +263,7 @@ body {
     align-items: center;
   }
   .header__title {
-    font-size: 8rem;
+    font-size: 12rem;
   }
   .header__right {
     width: 100%;
@@ -317,7 +317,7 @@ body {
   width: 60%;
   background-color: white;
   margin-right: 5rem;
-  padding: 5rem 0;
+  padding: 5rem 3rem;
 }
 .about-program__container--right {
   width: 40%;
@@ -525,9 +525,6 @@ body {
 @media only screen and (max-width: 600px) {
   .alumni__text {
     font-size: 2.5rem;
-  }
-  .alumni__item-container {
-    height: 90rem;
   }
   .alumni__content {
     padding: 3rem;
@@ -768,6 +765,7 @@ body {
     font-size: 5rem;
   }
   .team__content {
+    padding: 2rem 6rem;
     flex-direction: column;
     overflow: hidden;
   }
