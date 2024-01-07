@@ -16,9 +16,10 @@
   &__left {
     width: 55%;
     background-color: #0084ff;
-    padding: 5rem;
+    padding: 8rem 5rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
 
   &__title {
@@ -27,15 +28,18 @@
     font-weight: 900;
     line-height: 1;
     position: relative;
+    text-align: center;
 
-    &::before {
-      content: "AND";
+    &:first-child::before {
+      content: "&";
       position: absolute;
-      top: 50%;
-      left: 30%;
+      top: 100%;
+      left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 5rem;
+      font-size: 8rem;
+      opacity: 0.9;
       color: orange;
+      z-index: 100;
     }
 
     &--yllw {
@@ -44,6 +48,7 @@
       font-weight: 900;
       line-height: 1;
       position: relative;
+      text-align: center;
     }
   }
 
@@ -103,6 +108,13 @@
 
     &__placeholder {
       display: none;
+    }
+
+    &__carousel {
+      &--item {
+        height: 50vh;
+        position: relative;
+      }
     }
   }
 }

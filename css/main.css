@@ -191,9 +191,10 @@ body {
 .header__left {
   width: 55%;
   background-color: #0084ff;
-  padding: 5rem;
+  padding: 8rem 5rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .header__title {
   font-size: 10rem;
@@ -201,15 +202,18 @@ body {
   font-weight: 900;
   line-height: 1;
   position: relative;
+  text-align: center;
 }
-.header__title::before {
-  content: "AND";
+.header__title:first-child::before {
+  content: "&";
   position: absolute;
-  top: 50%;
-  left: 30%;
+  top: 100%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5rem;
+  font-size: 8rem;
+  opacity: 0.9;
   color: orange;
+  z-index: 100;
 }
 .header__title--yllw {
   font-size: 10rem;
@@ -217,6 +221,7 @@ body {
   font-weight: 900;
   line-height: 1;
   position: relative;
+  text-align: center;
 }
 .header__message {
   width: 100%;
@@ -265,6 +270,10 @@ body {
   }
   .header__placeholder {
     display: none;
+  }
+  .header__carousel--item {
+    height: 50vh;
+    position: relative;
   }
 }
 
@@ -356,10 +365,8 @@ body {
 }
 @media only screen and (max-width: 800px) {
   .about-program__title {
-    font-size: 3rem;
-  }
-  .about-program__subtitle {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
   }
   .about-program__container {
     flex-direction: column-reverse;
@@ -411,16 +418,20 @@ body {
 }
 @media only screen and (max-width: 500px) {
   .about-company {
-    padding: 5rem 2rem;
+    padding: 3rem;
     flex-direction: column;
   }
   .about-company__img {
     margin-bottom: 5rem;
-    width: 60%;
+    width: 80%;
     transform: translateX(1rem);
   }
   .about-company__text {
-    text-align: center;
+    padding: 0 2rem;
+    text-align: justify;
+  }
+  .about-company__content {
+    margin-left: 0;
   }
 }
 
@@ -456,17 +467,6 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-@media only screen and (max-width: 600px) {
-  .alumni__item-container__name {
-    font-size: 3rem;
-  }
-  .alumni__item-container__content .h3 {
-    font-size: 4rem;
-  }
-  .alumni__item-container__content .p {
-    font-size: 2rem;
-  }
-}
 .alumni__photo {
   height: 80%;
   background-position: center;
@@ -498,17 +498,22 @@ body {
   padding: 1rem 3rem;
   width: 100%;
 }
-.alumni__name, .alumni__program {
+.alumni__program {
   font-size: 2.5rem;
   color: white;
   font-weight: 700;
   text-align: center;
-}
-.alumni__program {
   background-color: #0085ff;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+.alumni__name--first, .alumni__name--last {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+  text-align: center;
   margin: 1rem 0;
 }
 .alumni__description {
@@ -516,6 +521,31 @@ body {
   font-weight: 700;
   text-align: center;
   font-size: 1.3rem;
+}
+@media only screen and (max-width: 600px) {
+  .alumni__text {
+    font-size: 2.5rem;
+  }
+  .alumni__item-container {
+    height: 90rem;
+  }
+  .alumni__content {
+    padding: 3rem;
+  }
+  .alumni__name {
+    display: flex;
+    justify-content: center;
+  }
+  .alumni__name--first, .alumni__name--last {
+    margin: 0 1rem;
+    font-size: 5rem;
+  }
+  .alumni__program {
+    font-size: 4rem;
+  }
+  .alumni__description {
+    font-size: 3rem;
+  }
 }
 
 .our-credibility {
@@ -553,7 +583,7 @@ body {
 }
 .our-credibility__subtitle {
   color: #0085ff;
-  font-size: 1.8rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -606,11 +636,19 @@ body {
     flex-direction: column-reverse;
   }
   .sponsors__right {
+    width: 100%;
     padding-bottom: 1rem;
   }
   .sponsors__left {
-    padding-top: 2rem;
+    width: 100%;
+    padding-top: 5rem;
     border-top: 1px solid #366b9c;
+  }
+  .sponsors__left img {
+    margin: 5rem 0 0 0;
+  }
+  .sponsors__img {
+    width: 100%;
   }
 }
 
@@ -641,6 +679,19 @@ body {
   width: 90%;
   margin: 3rem 0;
 }
+@media only screen and (max-width: 800px) {
+  .album {
+    padding: 2rem;
+  }
+  .album__title {
+    margin: 0 3rem;
+    font-size: 3rem;
+  }
+  .album__img {
+    width: 100%;
+    margin: 3rem 1rem;
+  }
+}
 
 .team {
   padding: 5rem 1rem;
@@ -667,6 +718,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 5rem;
 }
 .team__person-img {
   width: 70%;
@@ -680,19 +732,20 @@ body {
   margin: 2rem 0;
   color: white;
 }
-.team__person-info--position {
-  padding-top: 2rem;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 1.8rem;
-}
 .team__person-info--email {
+  padding-top: 2rem;
   text-transform: lowercase;
-  background-color: #ffb100;
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
   font-size: 1.5rem;
+}
+.team__person-info--position {
+  padding: 0.8rem 2rem;
+  text-transform: capitalize;
+  background-color: #ffb100;
+  font-weight: 700;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
 }
 .team__consultation {
   padding: 1rem;
@@ -711,29 +764,51 @@ body {
   .team {
     padding: 5rem 0;
   }
+  .team__title {
+    font-size: 5rem;
+  }
   .team__content {
     flex-direction: column;
     overflow: hidden;
   }
   .team__persons {
-    width: 110%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 0;
   }
   .team__person {
+    margin: 3rem 0;
     width: 100%;
     flex: 0 0 auto;
   }
   .team__person-img {
-    width: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
   }
   .team__person-info {
-    width: 100%;
+    font-size: 4rem;
+  }
+  .team__person-info--email {
+    font-size: 2rem;
+  }
+  .team__person-info--position {
+    font-size: 2.5rem;
+    margin-top: 2rem;
   }
   .team__consultation {
     padding: 0 1rem;
     width: 90%;
+  }
+  .team__consultation-text {
+    font-size: 2rem;
+    margin-bottom: 6rem;
   }
 }
 
