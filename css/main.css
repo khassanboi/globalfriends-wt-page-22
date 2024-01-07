@@ -261,6 +261,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 4rem;
   }
   .header__title {
     font-size: 12rem;
@@ -765,7 +766,7 @@ body {
     font-size: 5rem;
   }
   .team__content {
-    padding: 2rem 6rem;
+    padding: 2rem 5rem;
     flex-direction: column;
     overflow: hidden;
   }
@@ -786,8 +787,8 @@ body {
        object-fit: cover;
     -o-object-position: top;
        object-position: top;
-    width: 40rem;
-    height: 40rem;
+    width: 30rem;
+    height: 30rem;
     border-radius: 50%;
   }
   .team__person-info {

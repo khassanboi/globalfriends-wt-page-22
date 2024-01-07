@@ -571,7 +571,7 @@
     }
 
     &__content {
-      padding: 2rem 6rem;
+      padding: 2rem 5rem;
       flex-direction: column;
       overflow: hidden;
     }
@@ -593,8 +593,8 @@
     &__person-img {
       object-fit: cover;
       object-position: top;
-      width: 40rem;
-      height: 40rem;
+      width: 30rem;
+      height: 30rem;
       border-radius: 50%;
     }
 
