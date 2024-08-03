@@ -39,6 +39,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./scripts/Accordion.JS-master/accordion.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
@@ -120,7 +128,7 @@
           <a class="nav__item-link" href="#consultation">Consultation</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-link" href="#social-media">Social Media</a>
+          <a class="nav__item-link" href="#faq">FAQ</a>
         </li>
       </ul>
       <svg class="icon nav__icon-menu" id="menu-icon">
@@ -259,7 +267,7 @@
             >
             <a
               class="btn btn-blue"
-              href="documents/WT25_Program_Price_and_Expenses.pdf"
+              href="documents/WT25_Program_Fee_and_Other_Expenses.pdf"
               >PROGRAM PRICE</a
             >
           </div>
@@ -575,26 +583,34 @@
       </div>
       <div class="our-credibility__right"></div>
     </section>
+    <section class="certificates">
+      <h2 class="h2">Our Certifications</h2>
+      <h3 class="h3">
+        Global Friends is a member of US Chamber of Commerce, ICEF and WYSTC
+        confederations as well as certified by Dun & Bradstreet
+      </h3>
+      <div class="certificates__carousel owl-carousel owl-theme">
+        <div class="certificates__carousel-item">
+          <img src="./images/certificates/bridge.png" alt="Bridge USA" />
+        </div>
+        <div class="certificates__carousel-item">
+          <img src="./images/certificates/icef.png" alt="ICEF" />
+        </div>
+        <div class="certificates__carousel-item">
+          <img
+            src="./images/certificates/depst.png"
+            alt="Department of State"
+          />
+        </div>
 
-    <section class="sponsors" id="partners">
-      <div class="sponsors__left">
-        <h2 class="sponsors__title h2">Our Sponsors</h2>
-        <img
-          src="images/sponsors-list.png"
-          alt="List of Sponsors"
-          class="sponsors__img"
-        />
-      </div>
-      <div class="sponsors__right">
-        <h2 class="sponsors__title h2">Our Certificates</h2>
-        <img
-          src="images/certificates-list.png"
-          alt="List of Certificates"
-          class="sponsors__img"
-        />
+        <div class="certificates__carousel-item">
+          <img src="./images/certificates/dun.png" alt="Dun Bradstreet" />
+        </div>
+        <div class="certificates__carousel-item">
+          <img src="./images/certificates/wyse.png" alt="WyseTC" />
+        </div>
       </div>
     </section>
-
     <section class="album" id="album">
       <h2 class="album__title h2">LET'S MAKE YOUR AMERICAN DREAM COME TRUE</h2>
       <div class="album__container">
@@ -611,7 +627,35 @@
         >
       </div>
     </section>
-
+    <section class="sponsors">
+      <h2 class="h2">Our Visa Sponsors</h2>
+      <div class="sponsors__carousel owl-carousel owl-theme">
+        <div class="sponsors__carousel-item">
+          <img src="./images/sponsors/cenet.png" alt="Visa Sponsor" />
+        </div>
+        <div class="sponsors__carousel-item">
+          <img src="./images/sponsors/alliance.png" alt="Visa Sponsor" />
+        </div>
+        <div class="sponsors__carousel-item">
+          <img src="./images/sponsors/geo.png" alt="Visa Sponsor" />
+        </div>
+        <div class="sponsors__carousel-item">
+          <img src="./images/sponsors/greenheart.png" alt="Visa Sponsor" />
+        </div>
+        <div class="sponsors__carousel-item">
+          <img src="./images/sponsors/ciee.png" alt="Visa Sponsor" />
+        </div>
+        <div class="sponsors__carousel-item">
+          <img src="./images/sponsors/united.png" alt="Visa Sponsor" />
+        </div>
+        <div class="sponsors__carousel-item">
+          <img src="./images/sponsors/life.png" alt="Visa Sponsor" />
+        </div>
+        <div class="sponsors__carousel-item">
+          <img src="./images/sponsors/chi.png" alt="Visa Sponsor" />
+        </div>
+      </div>
+    </section>
     <section class="team" id="consultation">
       <h2 class="team__title h2">Our Team</h2>
       <div class="team__content">
@@ -727,72 +771,286 @@
         </div>
       </div>
     </section>
+    <section class="faq" id="faq">
+      <h2 class="h2">Frequently Asked Questions</h2>
+      <div class="faq__content">
+        <!-- General Information Section -->
+        <div class="faq__section">
+          <ul id="my-accordion" class="accordionjs">
+            <li>
+              <div class="faq__question">
+                What is the Global Friends Summer Work and Travel Program?
+              </div>
+              <div class="faq__answer">
+                The Global Friends Summer Work and Travel Program offers
+                university students the chance to work and travel in the United
+                States during their summer break. Participants gain valuable
+                cultural experiences, explore the U.S., and develop professional
+                skills through various job opportunities.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">Who is eligible to apply?</div>
+              <div class="faq__answer">
+                Eligible applicants are full-time university students aged 18-23
+                who are actively pursuing a Bachelor’s degree. Applicants must
+                have Upper-intermediate to Advanced English proficiency to
+                qualify.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">
+                What documents are required for the application?
+              </div>
+              <div class="faq__answer">
+                Applicants need to submit a valid travel passport, proof of
+                university enrollment, a recent academic transcript, and a
+                resume. These documents are essential to move forward in the
+                application process.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">When is the application deadline?</div>
+              <div class="faq__answer">
+                The application deadline varies each year, typically closing
+                around early December. However, this can change based on the
+                availability of spots, so early submission is encouraged to
+                secure your place.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">How do I apply for the program?</div>
+              <div class="faq__answer">
+                You can apply online via our website. The application process
+                includes filling out an online form, after which our team will
+                review your submission. If accepted, you will be contacted for
+                the next steps in the process.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">What types of jobs are available?</div>
+              <div class="faq__answer">
+                Participants can choose from a variety of job roles in
+                industries such as hospitality, retail, amusement parks, and
+                restaurants. Positions range from customer service roles to
+                lifeguarding, providing a broad spectrum of opportunities.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">How long does the program last?</div>
+              <div class="faq__answer">
+                The program duration is typically 3-4 months, coinciding with
+                your university summer break. This allows you to gain experience
+                and travel without interrupting your studies.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">Do I get paid for the work?</div>
+              <div class="faq__answer">
+                Yes, participants are paid according to U.S. wage laws. The
+                hourly pay rate generally ranges from $12 to $17, depending on
+                the job type and location.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">
+                Will I need a visa to participate?
+              </div>
+              <div class="faq__answer">
+                Yes, a J-1 Exchange Visitor Visa is required to participate in
+                the program. Global Friends Agency will assist you throughout
+                the visa application process. While we ensure accurate and
+                timely processing, visa approval is not guaranteed as it depends
+                on individual circumstances.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">
+                Can I participate in the program more than once?
+              </div>
+              <div class="faq__answer">
+                Yes, students who continue to meet the eligibility criteria can
+                participate in the program multiple times. Each year, you must
+                reapply and fulfill all program requirements.
+              </div>
+            </li>
+          </ul>
+        </div>
 
-    <section class="social-media" id="social-media">
-      <h2 class="social-media__title h2">Social Networks</h2>
-      <ul class="social-media__list">
-        <li class="social-media__list-item">
-          <a
-            href="https://www.instagram.com/globalfriendsuz"
-            class="social-media__link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./images/inst.png"
-              alt="Instagram Icon"
-              class="social-media__icon"
-            />
-            GlobalFriendsUz
-          </a>
-        </li>
-        <li class="social-media__list-item">
-          <a
-            href="https://www.facebook.com/GlobalFriendsUz"
-            class="social-media__link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./images/fb.png"
-              alt="Facebook Icon"
-              class="social-media__icon"
-            />
-            Work and Travel Uzbekistan
-          </a>
-        </li>
-        <li class="social-media__list-item">
-          <a
-            href="https://t.me/Workandtravelusauzbekistan"
-            class="social-media__link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./images/tg.png"
-              alt="Telegram Icon"
-              class="social-media__icon"
-            />
-            Global Friends Inc.
-          </a>
-        </li>
-        <li class="social-media__list-item">
-          <a
-            href="https://www.tiktok.com/@globalfriends.uz"
-            class="social-media__link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./images/tt.png"
-              alt="TikTok Icon"
-              class="social-media__icon"
-            />
-            Globalfriends.uz
-          </a>
-        </li>
-      </ul>
+        <!-- Travel and Accommodation Section -->
+        <div class="faq__section">
+          <ul id="my-accordion-2" class="accordionjs">
+            <li>
+              <div class="faq__question">Is accommodation provided?</div>
+              <div class="faq__answer">
+                Accommodation options vary by employer. Some employers offer
+                housing directly, while others assist in finding suitable
+                accommodations. Typically, housing costs range from $100 to $200
+                per week, which is usually deducted from your paycheck.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">
+                Can I travel within the U.S. during the program?
+              </div>
+              <div class="faq__answer">
+                Yes, participants are allowed to travel within the U.S. during
+                their days off and after their work commitments are completed,
+                as long as it falls within the validity period of your visa.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">
+                What are the costs associated with the program?
+              </div>
+              <div class="faq__answer">
+                The program costs include a program fee of $3,250, a visa
+                application fee of $185, airfare (approximately $1,200), and
+                personal expenses (around $1,000). Some employers may offer
+                subsidized housing and meals, which can help reduce costs.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">
+                What kind of support will I receive while in the U.S.?
+              </div>
+              <div class="faq__answer">
+                Global Friends Agency provides 24/7 support for all
+                participants. This includes assistance with job placements,
+                emergency support, cultural orientation sessions, and ongoing
+                guidance throughout your stay in the U.S.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">What does the program fee cover?</div>
+              <div class="faq__answer">
+                The program fee includes job placement, premium medical
+                insurance, DS-2019 Form and FedEx fees, SEVIS fee, sponsor
+                service fees, and local agency service fees. Additionally,
+                participants receive program orientation in Tashkent, visa
+                preparation, and branded gifts like water bottles, tote bags,
+                and an American SIM card.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">Is Visa guaranteed?</div>
+              <div class="faq__answer">
+                No, visa approval is not guaranteed as it is based on individual
+                circumstances. However, we assure timely and accurate processing
+                of all necessary documentation to improve your chances.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">
+                What happens after the program ends?
+              </div>
+              <div class="faq__answer">
+                After completing the program, participants must return to their
+                home country to continue their studies. Many alumni stay
+                connected with Global Friends for future opportunities,
+                networking, and alumni events.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">Are there any extra costs?</div>
+              <div class="faq__answer">
+                In addition to the primary program costs, participants should
+                budget for personal expenses, travel insurance, and potential
+                housing deposits. Be sure to plan accordingly.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">Is medical insurance provided?</div>
+              <div class="faq__answer">
+                Yes, the program fee includes premium medical insurance coverage
+                for the duration of your stay in the U.S. This ensures that
+                participants are protected in case of any medical emergencies.
+              </div>
+            </li>
+            <li>
+              <div class="faq__question">
+                What if I need emergency support while in the U.S.?
+              </div>
+              <div class="faq__answer">
+                Global Friends Agency offers 24/7 emergency support.
+                Participants can reach out to our support team at any time for
+                help with medical emergencies, housing issues, or other urgent
+                needs.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
+    <footer class="footer">
+      <div class="offices">
+        <ul class="offices__office">
+          <li class="offices__office-detail">USA Office:</li>
+          <li class="offices__office-detail">info@j1exchange.com</li>
+          <li class="offices__office-detail">+1 (504) 500-0902</li>
+          <li class="offices__office-detail">
+            5900 Balcones Drive Suite 100 Austin, TX 78731
+          </li>
+        </ul>
+        <ul class="offices__office">
+          <li class="offices__office-detail">Uzbekistan Office:</li>
+          <li class="offices__office-detail">info@j1exchange.com</li>
+          <li class="offices__office-detail">+998 90 061 55 37</li>
+          <li class="offices__office-detail">
+            Afrosiab Street 14, Tashkent, 100015
+          </li>
+        </ul>
+        <ul class="offices__office">
+          <li class="offices__office-detail">Kazakhstan Office:</li>
+          <li class="offices__office-detail">info.kz@j1exchange.com</li>
+          <li class="offices__office-detail">+7 701 167 22 16</li>
+          <li class="offices__office-detail">Dostyk Ave 38, Almaty 050010</li>
+        </ul>
+        <ul class="offices__office">
+          <li class="offices__office-detail">Ecuador Office:</li>
+          <li class="offices__office-detail">info.ec@j1exchange.com</li>
+          <li class="offices__office-detail">+593 987103070</li>
+          <li class="offices__office-detail">
+            Luis Cordero E12-35 & Andalucia CYEDE Building, 1st Floor, Office 9
+            Quito, 170109
+          </li>
+        </ul>
+      </div>
+      <div class="footer__low">
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a
+              href="https://www.youtube.com/channel/UCvAIrpB6iC6l0ytNVmCPzLw"
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="https://www.instagram.com/globalfriendsuz" target="_blank">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <a href=""></a>
+          <li class="footer__social-item">
+            <a
+              href="https://www.linkedin.com/company/globalfriends"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="https://t.me/globalfriendsUz" target="_blank">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="footer__copy">
+          Global Friends © 2020-2024 All Rights Reserved.
+        </p>
+      </div>
+    </footer>
     <script src="jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -814,6 +1072,7 @@
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts/Accordion.JS-master/accordion.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

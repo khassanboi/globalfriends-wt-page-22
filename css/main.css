@@ -811,47 +811,118 @@ body {
   }
 }
 
-.social-media {
-  background-image: url(../../images/contacts-bg.jpg);
-  background-size: cover;
-  padding: 10rem;
-  padding-bottom: 20rem;
+.faq {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.social-media__title {
+.faq .h2 {
   color: #0085ff;
-  margin-bottom: 5rem;
 }
-.social-media__list {
-  list-style: none;
-}
-.social-media__list-item {
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 1rem 0;
-  border-radius: 1rem;
-}
-.social-media__link {
-  color: black;
-  font-weight: 700;
-  font-size: 2.5rem;
-  text-decoration: none;
-}
-.social-media__icon {
-  width: 3rem;
-  margin-right: 1rem;
-  transition: all 0.2s;
-}
-.social-media__list-item:hover .social-media__icon {
-  margin-right: 2rem;
-  transform: scale(1.2);
+.faq__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 @media only screen and (max-width: 800px) {
-  .social-media {
-    padding: 7rem 5rem;
+  .faq__content {
+    flex-direction: column;
   }
 }
-@media only screen and (max-width: 500px) {
-  .social-media {
-    padding: 6rem 3rem;
+.faq__section {
+  width: 50%;
+}
+@media only screen and (max-width: 800px) {
+  .faq__section {
+    width: 100%;
   }
+}
+.faq__question {
+  background-color: #efefef !important;
+  border: none !important;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+.faq__question:hover {
+  background-color: #ddd !important;
+}
+.faq__answer {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #0085ff;
+}
+.faq ul {
+  margin: 0;
+}
+.faq li {
+  border: none !important;
+}
+
+.footer {
+  background-color: #0085ff;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 5rem;
+}
+.footer .offices {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .offices__office {
+  list-style: none;
+  margin-bottom: 3rem;
+  width: 25%;
+  padding: 0 !important;
+}
+@media only screen and (max-width: 800px) {
+  .footer .offices__office {
+    width: 50%;
+    font-size: 1.8rem;
+  }
+}
+.footer .offices__office-detail {
+  margin-bottom: 1rem;
+}
+.footer .offices__office-detail:first-child {
+  font-weight: 700;
+  color: #ffb100;
+}
+.footer__low {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1rem;
+  font-size: 2rem;
+}
+.footer__social a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.footer__social a:hover {
+  color: #ffb100;
+}
+
+.certificates,
+.sponsors {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.certificates .h2,
+.sponsors .h2 {
+  color: #0085ff;
 }/*# sourceMappingURL=main.css.map */
