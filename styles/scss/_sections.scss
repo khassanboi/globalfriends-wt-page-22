@@ -658,6 +658,13 @@
     font-weight: 400;
     margin-top: 1rem;
     transition: all 0.3s;
+
+    span {
+      position: absolute;
+      right: 1.2rem;
+      top: 0.5rem;
+      font-size: 2.5rem;
+    }
   }
 
   &__question:hover {
@@ -684,6 +691,7 @@
   font-size: 1.5rem;
   color: #fff;
   padding: 5rem;
+  position: relative;
 
   .offices {
     width: 100%;
@@ -694,7 +702,7 @@
     &__office {
       list-style: none;
       margin-bottom: 3rem;
-      width: 25%;
+      width: 18%;
       padding: 0 !important;
 
       @media only screen and (max-width: 800px) {
@@ -710,6 +718,17 @@
     &__office-detail:first-child {
       font-weight: 700;
       color: #ffb100;
+    }
+
+    img {
+      width: 23%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      @media only screen and (max-width: 800px) {
+        display: none;
+      }
     }
   }
 
@@ -747,5 +766,63 @@
 
   .h2 {
     color: #0085ff;
+  }
+}
+
+.copyright {
+  background-color: #003568;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  padding-bottom: 1rem;
+  color: #fff;
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1rem;
+    font-size: 2rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #ffb100;
+      }
+    }
+  }
+}
+
+.steps {
+  color: #0085ff;
+  background-color: #fafafa;
+  padding: 5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  &__img.small {
+    display: none;
+
+    @media only screen and (max-width: 600px) {
+      display: block;
+    }
+  }
+
+  &__img.big {
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
 }
