@@ -88,7 +88,7 @@
     margin-left: 5rem;
 
     @media only screen and (max-width: 800px) {
-      width: 60%;
+      width: 80%;
       margin: 3rem 0;
     }
   }
@@ -284,9 +284,8 @@
   }
 
   @media only screen and (max-width: 600px) {
-    &__text {
-      font-size: 2.5rem;
-    }
+    background-size: contain;
+    background-repeat: no-repeat;
 
     &__content {
       padding: 3rem;
@@ -356,6 +355,7 @@
   &__list {
     list-style: none;
     margin-top: 2rem;
+    padding: 0;
   }
 
   &__list-item {
@@ -381,7 +381,6 @@
   }
 
   @media only screen and (max-width: 800px) {
-    flex-direction: column-reverse;
     background-size: cover;
     background-position: center;
 
@@ -404,6 +403,7 @@
 
 .sponsors {
   display: flex;
+  padding-bottom: 0;
 
   img {
     transform: scale(0.8);
@@ -498,7 +498,7 @@
 
     &__title {
       margin: 0 3rem;
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     &__img {
@@ -571,15 +571,18 @@
   }
 
   &__consultation {
-    padding: 5rem 30rem;
+    padding: 3rem;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-size: 1.8rem;
+    background-color: #f4f4f4;
   }
 
   &__consultation-text {
+    width: 60%;
     text-align: center;
     margin: 3rem 0;
   }
@@ -633,13 +636,11 @@
     }
 
     &__consultation {
-      padding: 0 1rem;
-      width: 90%;
+      padding-bottom: 6rem;
     }
 
     &__consultation-text {
-      font-size: 2rem;
-      margin-bottom: 6rem;
+      width: 90%;
     }
   }
 }
@@ -727,8 +728,8 @@
       padding: 0 !important;
 
       @media only screen and (max-width: 800px) {
-        width: 50%;
-        font-size: 1.8rem;
+        width: 80%;
+        font-size: 2.2rem;
       }
     }
 
@@ -796,6 +797,8 @@
 
 .certificates,
 .sponsors {
+  background-color: #f4f4f4;
+
   img {
     transform: scale(0.7);
   }

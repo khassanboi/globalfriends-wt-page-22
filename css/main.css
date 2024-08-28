@@ -363,7 +363,7 @@ body {
 }
 @media only screen and (max-width: 800px) {
   .about-program__img {
-    width: 60%;
+    width: 80%;
     margin: 3rem 0;
   }
 }
@@ -532,8 +532,9 @@ body {
   text-align: center;
 }
 @media only screen and (max-width: 600px) {
-  .alumni__text {
-    font-size: 2.5rem;
+  .alumni {
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .alumni__content {
     padding: 3rem;
@@ -591,6 +592,7 @@ body {
 .our-credibility__list {
   list-style: none;
   margin-top: 2rem;
+  padding: 0;
 }
 .our-credibility__list-item {
   display: flex;
@@ -613,7 +615,6 @@ body {
 }
 @media only screen and (max-width: 800px) {
   .our-credibility {
-    flex-direction: column-reverse;
     background-size: cover;
     background-position: center;
   }
@@ -633,6 +634,7 @@ body {
 
 .sponsors {
   display: flex;
+  padding-bottom: 0;
 }
 .sponsors img {
   transform: scale(0.8);
@@ -708,7 +710,7 @@ body {
   }
   .album__title {
     margin: 0 3rem;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .album__img {
     width: 100%;
@@ -772,14 +774,17 @@ body {
   font-size: 2rem;
 }
 .team__consultation {
-  padding: 5rem 30rem;
+  padding: 3rem;
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-size: 1.8rem;
+  background-color: #f4f4f4;
 }
 .team__consultation-text {
+  width: 60%;
   text-align: center;
   margin: 3rem 0;
 }
@@ -827,12 +832,10 @@ body {
     margin-top: 2rem;
   }
   .team__consultation {
-    padding: 0 1rem;
-    width: 90%;
+    padding-bottom: 6rem;
   }
   .team__consultation-text {
-    font-size: 2rem;
-    margin-bottom: 6rem;
+    width: 90%;
   }
 }
 
@@ -915,8 +918,8 @@ body {
 }
 @media only screen and (max-width: 800px) {
   .footer .offices__office {
-    width: 50%;
-    font-size: 1.8rem;
+    width: 80%;
+    font-size: 2.2rem;
   }
 }
 .footer .offices__office-detail {
@@ -974,6 +977,7 @@ body {
 
 .certificates,
 .sponsors {
+  background-color: #f4f4f4;
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
