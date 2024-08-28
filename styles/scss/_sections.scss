@@ -291,15 +291,9 @@
       padding: 3rem;
     }
 
-    &__name {
-      display: flex;
-      justify-content: center;
-
-      &--first,
-      &--last {
-        margin: 0 1rem;
-        font-size: 5rem;
-      }
+    &__name,
+    &__instagram {
+      font-size: 3rem;
     }
 
     &__program {
@@ -386,7 +380,7 @@
 
     &__left {
       width: 100%;
-      padding: 5rem 3rem;
+      padding: 0rem 3rem;
     }
 
     &__right {
@@ -499,6 +493,7 @@
     &__title {
       margin: 0 3rem;
       font-size: 2rem;
+      padding: 1rem;
     }
 
     &__img {
@@ -610,15 +605,15 @@
 
     &__person {
       margin: 3rem 0;
-      width: 100%;
+      width: 80%;
       flex: 0 0 auto;
     }
 
     &__person-img {
       object-fit: cover;
       object-position: top;
-      width: 30rem;
-      height: 30rem;
+      width: 25rem;
+      height: 25rem;
       border-radius: 50%;
     }
 
@@ -807,6 +802,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   .h2 {
     color: #0085ff;
